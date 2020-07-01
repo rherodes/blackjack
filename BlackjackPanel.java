@@ -3,7 +3,7 @@
 //	author: Rick Herodes
 //	date:	4/24/2019
 //
-//  Creates a blackjack game.
+//  Creates a GUI in which to play a game of blackjack.
 //********************************************************************
 
 import java.awt.*;
