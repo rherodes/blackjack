@@ -16,20 +16,33 @@ import javax.swing.border.Border;
 public class BlackjackPanel extends JPanel
 {
 	//Variable Declarations
-	private final int WIDTH = 1900, HEIGHT = 950, TABLESIZE = 1800;								//table drawing constants
+	//table drawing constants
+	private final int WIDTH = 1900, HEIGHT = 950, TABLESIZE = 1800;								
 
-	private ImageIcon[] cards = new ImageIcon[52];												//holds all card pictures, also
-	private ImageIcon[] playerCards = new ImageIcon[12], dealerCards = new ImageIcon[12], playerSplitCards = new ImageIcon[12];				//holds player and dealer cards
-	private JButton hit, stand, split, doubleDown, surrender;									//buttons for action on cards or to bet
-	private JLabel[] results = new JLabel[6];													//holds output saying what's happening
-	private JLabel funds, bet;																	//used to show funds and the bet header
-	private int money, betAmount;																//used for fund math
-	private int cardNumber, playerCardCount, playerCardSplitCount;								//which card should be used and how many cards player has
-	private int playerPointTotal, dealerPointTotal, pointTotal, temp, cardCountPlayer, cardCountDealer;		//holds totals for card values and holds individual value
-	private int numAcesPlayer, numAcesSplit, numAcesDealer;										//used to choose most effective use of aces
-	private boolean splitDone;																	//used to tell if the split has been completed or not
-	private JTextField betInput;																//used to input the bet amount
-	//private int TextPanelWidth = 0;															//stores the width of the text panel for sizing
+	//holds all card pictures, also
+	private ImageIcon[] cards = new ImageIcon[52];												
+	//holds player and dealer cards
+	private ImageIcon[] playerCards = new ImageIcon[12], dealerCards = new ImageIcon[12], playerSplitCards = new ImageIcon[12];				
+	//buttons for action on cards or to bet
+	private JButton hit, stand, split, doubleDown, surrender;									
+	//holds output saying what's happening
+	private JLabel[] results = new JLabel[6];													
+	//used to show funds and the bet header
+	private JLabel funds, bet;																	
+	//used for fund math
+	private int money, betAmount;																
+	//which card should be used and how many cards player has
+	private int cardNumber, playerCardCount, playerCardSplitCount;								
+	//holds totals for card values and holds individual value
+	private int playerPointTotal, dealerPointTotal, pointTotal, temp, cardCountPlayer, cardCountDealer;		
+	//used to choose most effective use of aces
+	private int numAcesPlayer, numAcesSplit, numAcesDealer;										
+	//used to tell if the split has been completed or not
+	private boolean splitDone;																	
+	//used to input the bet amount
+	private JTextField betInput;																
+	//stores the width of the text panel for sizing
+	//private int TextPanelWidth = 0;															
 
 
 	/********************************************************************/
